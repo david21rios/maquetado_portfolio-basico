@@ -5,39 +5,49 @@ body {
 
 }
 
+/* Centrar contenido en todas las pantallas */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* Asegura espacio lateral */
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
 /* Header */
 .header {
-  padding: 10px 10px;
+  padding: 10px 20px;
+  /* Espacio a los lados */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
-  /* Ajusta el max-width si es necesario */
-  margin: 0 auto;
 }
 
 .header__logo {
   width: 105px;
   height: 85px;
+  margin-right: 80px;
 }
 
 .header__navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
+
 
 .header__datos {
   color: black;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   font-size: 24px;
   font-weight: bold;
+  margin-right: 103px;
 }
 
 .header__icon {
@@ -46,9 +56,18 @@ body {
 
 /* Responsive header */
 @media (max-width: 786px) {
+  .header__navbar {
+    align-items: start;
+    width: 90%;
+  }
+
+  .header {
+    padding: 10px 20px;
+  }
+
   .header__logo {
-    width: 95px;
-    height: 75px;
+    width: 90px;
+    height: auto;
   }
 
   .header__datos {
@@ -59,12 +78,17 @@ body {
     font-size: 64px;
     width: 36px;
     height: 32px;
-    display: flex;
+    display: block;
   }
 
 }
 
 /* Main Sections */
+.main {
+  text-align: center;
+  /* padding: 20px; */
+}
+
 .main__contacto {
   background-color: black;
   color: white;
@@ -88,7 +112,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 616px;
+  margin: 0 auto;
+  /* height: 616px; */
   /* padding: 20px; */
 }
 
@@ -104,12 +129,13 @@ body {
 .main__img1 {
   width: 435px;
   height: 395px;
-  margin-right: 80px;
+  margin-right: 84px;
 }
 
-@media(max-width:768px) {
+@media(max-width:786px) {
   .main__info1 {
     flex-direction: column;
+    text-align: center;
     width: 100%;
     height: 594px;
   }
@@ -119,20 +145,26 @@ body {
   }
 
   .main__img1 {
-    width: 318px;
-    height: 300px;
+    width: 300px;
+    height: auto;
+    margin-left: 20%;
   }
 }
 
 .main__info2 {
   width: 100%;
+  max-width: 1440px;
   height: 538px;
   background-color: black;
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
   /* padding: 20px; */
 }
+
 
 .main__check {
   width: 211px;
@@ -155,19 +187,15 @@ body {
 }
 
 /* Ajustes en la main__info2 para dispositivos pequeños */
-@media(max-width: 767px) {
+@media(max-width: 786px) {
   .main__info2 {
     width: 100%;
     height: 538px;
     background-color: black;
     color: white;
-    display: flex;
     flex-direction: column;
-    /* Asegura que los elementos se apilen en columna */
     align-items: center;
-    /* Centra los elementos horizontalmente */
-    justify-content: center;
-    /* Centra los elementos verticalmente */
+    text-align: center;
   }
 
   .main__contenido {
@@ -189,25 +217,36 @@ body {
     /* Centra horizontalmente y añade espacio superior */
   }
 
-  .main__subtitle,
+  .main__subtitle {
+    text-align: center;
+    /* Centra el texto */
+    width: 100%;
+    /* Asegura que el texto se ajuste bien */
+  }
+
   .main__text {
     text-align: center;
     /* Centra el texto */
     width: 100%;
+    text-align: justify;
     /* Asegura que el texto se ajuste bien */
   }
 }
 
 .main__info3 {
   text-align: center;
-  width: 100%;
-  height: 604px;
+  width: 90%;
+  max-width: 1440px;
+  /* height: 604px; */
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main__servicios {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .main__servicios-title {
@@ -246,9 +285,9 @@ body {
   text-align: center;
 }
 
-@media(max-width:767px) {
+@media(max-width:786px) {
   .main__info3 {
-    width: 100%;
+    max-width: 900%;
     height: 1200px;
   }
 
@@ -276,6 +315,8 @@ body {
   /* Centra todo el contenido */
   justify-content: center;
   height: 660px;
+  padding: 40px 20px;
+
   /* Asegura que el contenedor ocupe toda la altura de la pantalla */
 }
 
@@ -283,6 +324,7 @@ body {
   width: 271px;
   align-self: self-start;
   font-size: 30px;
+  padding-top: 80px;
   /* Ajuste para separar el título del formulario */
 }
 
@@ -325,7 +367,7 @@ body {
   cursor: pointer;
 }
 
-@media(max-width:767px) {
+@media(max-width:786px) {
   .main__contacto {
     width: 100%;
     height: 660px;
@@ -352,8 +394,9 @@ body {
   /* Color del texto */
   display: flex;
   justify-content: space-between;
+  text-align: center;
   /* Espacio entre logo y enlaces */
-  padding: 20px;
+  padding: 20px 20px;
   /* Espaciado interno */
 }
 
@@ -361,7 +404,8 @@ body {
   display: flex;
   flex-direction: column;
   /* Apila logo y textos en columna */
-  align-items: flex-start;
+  align-items: center;
+  margin-left: 80px;
   /* Alinea a la izquierda */
 }
 
@@ -383,9 +427,11 @@ body {
   display: flex;
   flex-direction: column;
   /* Apila los enlaces en columna */
-  gap: 10px;
+  gap: 20px;
   /* Espacio entre los enlaces */
   align-items: flex-start;
+  margin-right: 229px;
+  /* justify-content: center; */
   /* Alinea los enlaces a la izquierda */
 }
 
@@ -403,11 +449,11 @@ body {
   /* Subrayado al pasar el mouse */
 }
 
-@media(max-width: 767px) {
+@media(max-width: 786px) {
   .footer {
     flex-direction: column;
     /* Cambia a columna para pantallas pequeñas */
-    align-items: start;
+    align-items: flex-start;
     /* Centra los elementos horizontalmente */
     height: 493px;
     /* Permite que el footer ajuste su altura automáticamente */
@@ -417,6 +463,7 @@ body {
 
   .footer__logo-container {
     align-items: start;
+    padding: 0 30px;
     /* Centra logo y textos en pantallas pequeñas */
   }
 
@@ -427,7 +474,10 @@ body {
   }
 
   .footer__enlaces {
-    align-items: start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 30px;
+
     /* Centra los enlaces en pantallas pequeñas */
   }
 }
