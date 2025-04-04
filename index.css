@@ -1,0 +1,433 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+.header {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  /* Ajusta el max-width si es necesario */
+  margin: 0 auto;
+}
+
+.header__logo {
+  width: 105px;
+  height: 85px;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__datos {
+  color: black;
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__icon {
+  display: none;
+}
+
+/* Responsive header */
+@media (max-width: 786px) {
+  .header__logo {
+    width: 95px;
+    height: 75px;
+  }
+
+  .header__datos {
+    display: none;
+  }
+
+  .header__icon {
+    font-size: 64px;
+    width: 36px;
+    height: 32px;
+    display: flex;
+  }
+
+}
+
+/* Main Sections */
+.main__contacto {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  /* Cambia a columna para mejor organización */
+  align-items: center;
+  /* Centra el contenido */
+  justify-content: center;
+  max-width: 100%;
+  /* Asegúrate de que no exceda el ancho de la pantalla */
+  margin: 0 auto;
+  /* Centra el contenedor */
+}
+
+.main__info1 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 616px;
+  /* padding: 20px; */
+}
+
+.main__title {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  width: 313px;
+  height: 96px;
+  margin-left: 80px;
+}
+
+.main__img1 {
+  width: 435px;
+  height: 395px;
+  margin-right: 80px;
+}
+
+@media(max-width:768px) {
+  .main__info1 {
+    flex-direction: column;
+    width: 100%;
+    height: 594px;
+  }
+
+  .main__title {
+    width: 291px;
+  }
+
+  .main__img1 {
+    width: 318px;
+    height: 300px;
+  }
+}
+
+.main__info2 {
+  width: 100%;
+  height: 538px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.main__check {
+  width: 211px;
+  height: 211px;
+  margin-left: 306px;
+}
+
+.main__subtitle {
+  font-size: 32px;
+}
+
+.main__text {
+  font-size: 24px;
+}
+
+.main__contenido {
+  text-align: justify;
+  padding: 0 10%;
+  width: 532px;
+}
+
+/* Ajustes en la main__info2 para dispositivos pequeños */
+@media(max-width: 767px) {
+  .main__info2 {
+    width: 100%;
+    height: 538px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* Asegura que los elementos se apilen en columna */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    justify-content: center;
+    /* Centra los elementos verticalmente */
+  }
+
+  .main__contenido {
+    text-align: center;
+    order: 1;
+    width: 90%;
+    /* Ajusta el tamaño del contenido */
+    max-width: 500px;
+    /* Limita el ancho máximo */
+  }
+
+  .main__check {
+    order: 2;
+    /* Asegura que aparezca después del contenido */
+    width: 120px;
+    /* Ajusta el tamaño del check */
+    height: 120px;
+    margin: 20px auto;
+    /* Centra horizontalmente y añade espacio superior */
+  }
+
+  .main__subtitle,
+  .main__text {
+    text-align: center;
+    /* Centra el texto */
+    width: 100%;
+    /* Asegura que el texto se ajuste bien */
+  }
+}
+
+.main__info3 {
+  text-align: center;
+  width: 100%;
+  height: 604px;
+}
+
+.main__servicios {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.main__servicios-title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.main__servicio {
+  width: 271px;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.main__servicio-img {
+  width: 138px;
+  height: 138px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__servicio-subtitle {
+  margin-top: 150px;
+}
+
+.main__servicio-text {
+  width: 262px;
+  height: 117px;
+  margin-top: 0px;
+  /* Ajustar según la imagen */
+  text-align: center;
+}
+
+@media(max-width:767px) {
+  .main__info3 {
+    width: 100%;
+    height: 1200px;
+  }
+
+  .main__servicios {
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__servicios-title {
+    width: 100%;
+    height: 55.81px;
+    font-size: 32px;
+  }
+}
+
+
+.main__contacto {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* Centra todo el contenido */
+  justify-content: center;
+  height: 660px;
+  /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.main__contacto-title {
+  width: 271px;
+  align-self: self-start;
+  font-size: 30px;
+  /* Ajuste para separar el título del formulario */
+}
+
+.main__contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  /* Ajusta el formulario al ancho de su contenedor */
+  max-width: 376px;
+  /* Máximo ancho para el formulario */
+  align-items: flex-start;
+  /* Alinea los elementos del formulario hacia la izquierda */
+}
+
+.main__contacto-form label {
+  margin-bottom: 5px;
+  /* Separación entre la etiqueta y el input */
+}
+
+.main__contacto-form input,
+.main__contacto-form textarea,
+.main__contacto-form button {
+  width: 100%;
+  /* Hace que los campos ocupen todo el ancho disponible */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.main__contacto textarea {
+  height: 113px;
+}
+
+.main__contacto-form button {
+  max-width: 376px;
+  width: 100%;
+  background-color: #FFD953;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+@media(max-width:767px) {
+  .main__contacto {
+    width: 100%;
+    height: 660px;
+    flex-direction: column;
+  }
+
+  .main__contacto-title {
+    align-self: center;
+  }
+
+  .main__contacto-form {
+    max-width: 350px;
+  }
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 346px;
+  /* Asegúrate de que ocupe todo el ancho */
+  background-color: #969595;
+  /* Color de fondo */
+  color: white;
+  /* Color del texto */
+  display: flex;
+  justify-content: space-between;
+  /* Espacio entre logo y enlaces */
+  padding: 20px;
+  /* Espaciado interno */
+}
+
+.footer__logo-container {
+  display: flex;
+  flex-direction: column;
+  /* Apila logo y textos en columna */
+  align-items: flex-start;
+  /* Alinea a la izquierda */
+}
+
+.footer__logo {
+  width: 95px;
+  /* Ajusta el tamaño del logo */
+  height: 85px;
+}
+
+.footer__text,
+.footer__copyright {
+  margin: 5px 0;
+  /* Espacio entre el texto */
+  text-align: left;
+  /* Alinea el texto a la izquierda */
+}
+
+.footer__enlaces {
+  display: flex;
+  flex-direction: column;
+  /* Apila los enlaces en columna */
+  gap: 10px;
+  /* Espacio entre los enlaces */
+  align-items: flex-start;
+  /* Alinea los enlaces a la izquierda */
+}
+
+.footer__enlaces a {
+  color: white;
+  /* Color del texto de los enlaces */
+  text-decoration: none;
+  /* Quita el subrayado */
+  font-size: 18px;
+  /* Tamaño de fuente */
+}
+
+.footer__enlaces a:hover {
+  text-decoration: underline;
+  /* Subrayado al pasar el mouse */
+}
+
+@media(max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    /* Cambia a columna para pantallas pequeñas */
+    align-items: start;
+    /* Centra los elementos horizontalmente */
+    height: 493px;
+    /* Permite que el footer ajuste su altura automáticamente */
+    gap: 20px;
+    /* Espacio entre los elementos */
+  }
+
+  .footer__logo-container {
+    align-items: start;
+    /* Centra logo y textos en pantallas pequeñas */
+  }
+
+  .footer__text,
+  .footer__copyright {
+    text-align: start;
+    /* Centra el texto en pantallas pequeñas */
+  }
+
+  .footer__enlaces {
+    align-items: start;
+    /* Centra los enlaces en pantallas pequeñas */
+  }
+}
