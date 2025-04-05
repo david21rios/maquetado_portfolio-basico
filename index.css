@@ -109,11 +109,11 @@ body {
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  /* height: 616px; */
+  height: 616px;
   /* padding: 20px; */
 }
 
@@ -153,7 +153,7 @@ body {
 
 .main__info2 {
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   height: 538px;
   background-color: black;
   color: white;
@@ -161,7 +161,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 0;
   /* padding: 20px; */
 }
 
@@ -169,7 +169,7 @@ body {
 .main__check {
   width: 211px;
   height: 211px;
-  margin-left: 306px;
+  margin-left: 250px;
 }
 
 .main__subtitle {
@@ -182,8 +182,9 @@ body {
 
 .main__contenido {
   text-align: justify;
-  padding: 0 10%;
-  width: 532px;
+  padding: 0 5%;
+  width: 90%;
+  max-width: 532px;
 }
 
 /* Ajustes en la main__info2 para dispositivos pequeños */
@@ -237,16 +238,16 @@ body {
   text-align: center;
   width: 90%;
   max-width: 1440px;
-  /* height: 604px; */
-  margin: 0 auto;
-  padding: 0 20px;
+  height: 504px;
+  /* margin: 0 auto; */
+  padding: 0 20px 0 20px;
 }
 
 .main__servicios {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  /* flex-wrap: wrap; */
 }
 
 .main__servicios-title {
@@ -278,11 +279,11 @@ body {
 }
 
 .main__servicio-text {
-  width: 262px;
+  /* width: 262px; */
   height: 117px;
   margin-top: 0px;
   /* Ajustar según la imagen */
-  text-align: center;
+  text-align: justify;
 }
 
 @media(max-width:786px) {
@@ -315,7 +316,7 @@ body {
   /* Centra todo el contenido */
   justify-content: center;
   height: 660px;
-  padding: 40px 20px;
+  padding: 40px 0;
 
   /* Asegura que el contenedor ocupe toda la altura de la pantalla */
 }
@@ -396,7 +397,7 @@ body {
   justify-content: space-between;
   text-align: center;
   /* Espacio entre logo y enlaces */
-  padding: 20px 20px;
+  padding: 20px 0;
   /* Espaciado interno */
 }
 
@@ -476,6 +477,7 @@ body {
   .footer__enlaces {
     align-items: flex-start;
     flex-direction: column;
+    margin: 0 0 0 80px;
     padding: 0 30px;
 
     /* Centra los enlaces en pantallas pequeñas */
