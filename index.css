@@ -236,8 +236,8 @@ body {
 
 .main__info3 {
   text-align: center;
-  width: 90%;
-  max-width: 1440px;
+  width: 100%;
+  /* max-width: 1440px; */
   height: 504px;
   /* margin: 0 auto; */
   padding: 0 20px 0 20px;
@@ -322,7 +322,7 @@ body {
 }
 
 .main__contacto-title {
-  width: 271px;
+  width: 250px;
   align-self: self-start;
   font-size: 30px;
   padding-top: 80px;
@@ -351,7 +351,7 @@ body {
 .main__contacto-form button {
   width: 100%;
   /* Hace que los campos ocupen todo el ancho disponible */
-  padding: 10px;
+  padding: 10px 0;
   margin-bottom: 10px;
 }
 
